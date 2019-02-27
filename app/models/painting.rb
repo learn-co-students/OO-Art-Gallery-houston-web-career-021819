@@ -15,8 +15,11 @@ class Painting
   end
 
   def self.total_price
-    price_array = self.all.price
-    price_array.inject{|sum, x| sum + x}
+    total = 0
+    Painting.all.each do |painting|
+      total += painting.price
+    end
+    return total
   end
 
 end
