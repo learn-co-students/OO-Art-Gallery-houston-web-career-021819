@@ -1,6 +1,6 @@
 class Painting
 
-  attr_reader :title, :price
+  attr_reader :title, :price, :gallery
 
   @@all = []
 

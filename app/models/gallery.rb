@@ -7,6 +7,10 @@ class Gallery
     @@all << self 
   end
 
+  def self.all
+    @@all
+  end
+
   def paintings
     Painting.all.select do |painting|
       painting.gallery == self
